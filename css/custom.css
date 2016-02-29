@@ -1,0 +1,256 @@
+/*  Body and content areas:
+ * 
+ *    Padding things out a bit.
+ */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 48em) {
+  .container {
+    max-width: 48em;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/*  Headings and Paragraphs:
+ * 
+ *    Using a custom font for all the headers.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+p{
+  margin: 2px 0 2px;
+}
+
+/*  Links:
+ * 
+ *    Keeping it simple with a shade of green slightly
+ *    darker than that used in the memory-bar.
+ */
+a, a:hover{
+  color: #5C967D;
+}
+
+/*  Tables:
+ * 
+ *    Undoing bootstraps bold table headers.
+ */
+.table{
+  margin-bottom: 0;
+}
+
+th{
+  font-weight: 400;
+}
+
+.table>tbody>tr>td{
+  padding: 10px 8px 6px;
+}
+
+/*  Font-Awesome:
+ * 
+ *    Slightly off grey-green. Probably pointless.
+ */
+i.demo-icon{
+  color: #495D54;
+}
+
+/*  Banner area:
+ * 
+ *    Customising the subheading font colour to match
+ *    the Used bar and the Rasberry Pi Logo.
+ */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+  color: #DA5D5D;
+}
+
+.title-text h1{
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.title-area{
+  border-bottom: 1px solid #ddd;
+}
+
+.title-logo{
+  text-align: center;
+}
+
+.title-logo > img{
+  width: 48px;
+  margin: 19px 0 10px;
+}
+ 
+.title-text{
+  text-align: center;
+}
+
+/*  Widgets:
+ * 
+ *    These are helpers for the individual
+ *    boxes of info.
+ */
+.widget-padding{
+  margin-bottom: 30px;
+}
+
+.widget-less-padding{
+  margin-bottom: 10px;
+}
+
+/*  Status Bars:
+ * 
+ *    Customisations used for the memory-bar and the
+ *    used-storage bars. Trying to use colours that
+ *    it's easy to read black text off of, and that
+ *    made sense in context: 
+ *    i.e. Red for "Used Memory"
+ *    Though the green is being used for the Storage
+ *    Used so the bottom half of the page isn't 
+ *    overpowering.  
+ */
+.progress{
+  margin-bottom: 0;
+}
+
+.progress-bar{
+  color: #FFF;
+}
+
+/* Give a little extra room for Total Ram */
+.row-memory div:nth-child(2) {
+  padding-left:0;
+}
+
+.membar-key > span.membar-key-used,
+.progress-bar-used{
+  background: #DA5D5D;
+}
+
+.membar-key > span.membar-key-buffers,
+.progress-bar-buffers{
+  background: #E4D37C;
+}
+
+.membar-key > span.membar-key-cache,
+.progress-bar-cache{
+  background: #8db4a3;
+}
+
+.membar-key > span.membar-key-free,
+.progress-bar-free{
+  background: #c2d2bd;
+}
+
+.progress-bar-custom{
+  color: #000;
+  background-color: #8db4a3;
+  padding: 0 0 0 4px;
+}
+
+.membar-key > p{
+  display: inline;
+}
+
+td.membar-key{
+  width:4em;
+}
+
+.membar-key > span{
+  margin-right: 5px;
+  font-size: 11px;
+  background-color: #ddd;
+  color: #000;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  width:100%;
+}
+
+/* force a wider percentage bar on a smaller screen */
+#storage_pct_bars{
+  min-width: 0; 
+}
+
+/*  Responsive:
+ * 
+ *    Portrait tablets and up
+ */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  body{
+    padding-top: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  /* dont force a wider percentage bar on a smaller screen */
+  #storage_pct_bars{
+   min-width: 8em; 
+  }
+
+  /* tweak the title area so it lies nicer */
+  .title-text{
+    text-align: left;
+  }
+
+  .title-logo{
+    text-align: right;
+  }
+
+  .title-logo > img{
+    margin: 28px 0 0 0;
+  } 
+}
+
+/*  Footer:
+ * 
+ *    Adding a slight line to seperate the footer from
+ *    the rest of the page.
+ */
+.footer {
+  padding-top: 5px;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+footer > p{
+  margin-bottom: 8px;
+}

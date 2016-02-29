@@ -1,0 +1,7 @@
+SAMBA - important files are in use - suspend not allowed
+Time:2016-02-29 14:28:31.235615
+System is active, not suspending
+SAMBA is idle for 0 minutes/loops
+Transmission is idle for 198 minutes/loops
+There is no lock file found
+SSH session active (not set as a blocker for suspending system)
