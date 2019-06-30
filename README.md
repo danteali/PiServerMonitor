@@ -16,8 +16,6 @@ Currant Pi will show you current information about your Raspberry Pi's:
  * Memory allocation
  * Available storage
 
-[Check out the Live Demo &rarr;](http://ukube.colinwaddell.com/rpiinfo/) 
-
 <a href="http://ukube.colinwaddell.com/rpiinfo/">
   <img src="https://raw.githubusercontent.com/ColinWaddell/CurrantPi/screenshots/img/screenshot.png" width="380"/>
 </a>
